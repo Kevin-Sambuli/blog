@@ -1,9 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Blogs {% endblock %}
 {% block homeactive %} active {% endblock homeactive %}
 
 {% block css %}
+ body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+        background-image: url('{% static "img/photo.jpg"%}');
+    }
 
 {% endblock %}
 {% block body %}
